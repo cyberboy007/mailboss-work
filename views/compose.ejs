@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Mailboss</title>
+		<!-- Include Quill stylesheet -->
+		<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet" />
+		<!-- bootstrapcdn -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+			integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- font Awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<style>
+			#editor {
+				height: 400px;
+			}
+		</style>
+	</head>
+	<body class="body-com" height="100vh !important">
+		<div class="addbtn">
+			<button class="addbtn2" type="submit" name="button">
+			<a href="/landing_page">
+
+				<h6 class="links_name">	<i class="fas fa-home"></i>  HOME</h6>
+
+				<!-- <span class="links_name">HOME</span> -->
+			</a>
+		</button>
+		</div>
+		<div class="cbody">
+			<h1 class="chead">Compose your Mail here.</h1>
+			<div class="container" style="padding-bottom: 50px !important; width: 40% !important;">
+				<form action="#" method="post">
+					<div class="row">
+						<div class="col-25">
+							<label class="lab" for="to">To:</label>
+						</div>
+						<div class="col-75"><input class="in" type="email" id="to" name="to" placeholder="name@example.com" required="true"/></div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label class="lab" for="cc">Cc:</label>
+						</div>
+						<div class="col-75">
+							<input class="in" type="text" id="cc" name="cc" placeholder="name@example.com,name2@example.com,..."/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label class="lab" for="bcc">Bcc:</label>
+						</div>
+						<div class="col-75">
+							<input class="in" type="text" id="bcc" name="bcc" placeholder="name@example.com,name2@example.com,..." />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label class="lab" for="subject" >Subject:</label>
+						</div>
+						<div class="col-75">
+							<input class="in" type="text" id="subject" name="subject" required="true" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label class="lab" for="editor">Body:</label>
+						</div>
+						<div class="col-75" style="margin-bottom: 50px; width: 70%; margin-left: 90px;">
+								<!-- Create the editor container -->
+								<div id="editor" name="content"></div>
+								<input type="hidden" id="htmlContent" name="htmlContent" />
+						</div>
+					</div>
+					<div class="dropdown">
+						<a class="vbtn dropbtn" style="height: 70px; width: 100px; text-decoration: none; padding: 20px 40px; margin-bottom: 30px">
+							<span class="qw">SCHEDULE</span> <i class="fas fa-calendar-alt"></i>
+						</a>
+						<div class="dropdown-content">
+							<!-- calendar type input -->
+
+							<input type="date" id="start" name="tripStart">
+
+							<!-- date element -->
+							<input type="time" id="appt" name="appt" required>
+							<button class="drop" type="submit" formaction="/send-mail-now">Schedule and Send</button>
+
+							<!-- <button class="drop" type="submit" formaction="/send-mail-weekly">WEEKLY</button>
+							<button class="drop" type="submit" formaction="/send-mail-weekly">MONTHLY</button>
+							<button class="drop" type="submit" formaction="/send-mail-yearly">YEARLY</button> -->
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Include the Quill library -->
+		<script src="https://cdn.quilljs.com/1.0.0/quill.js"></script>
+		<!-- Initialize Quill editor -->
+		<script>
+			var toolbarOptions = [
+				'bold',
+				'italic',
+				'underline',
+				'strike',
+				{
+					script: 'sub',
+				},
+				{
+					script: 'super',
+				},
+				{
+					indent: '-1',
+				},
+				{
+					indent: '+1',
+				},
+				{
+					direction: 'rtl',
+				},
+				{
+					size: ['small', false, 'large', 'huge'],
+				},
+				{
+					header: [1, 2, 3, 4, 5, 6, false],
+				},
+				{
+					color: [],
+				},
+				{
+					background: [],
+				},
+				{
+					font: [],
+				},
+				{
+					align: [],
+				},
+			];
+			var editor = new Quill('#editor', {
+				modules: {
+					// toolbar: "#toolbar"
+					toolbar: toolbarOptions,
+				},
+				theme: 'snow',
+			});
+
+			var editor_content = editor.container.innerHTML;
+			console.log(editor_content);
+
+			function formatField() {
+				var editor = (document.querySelector('.ql-editor').contentEditable = false);
+				var clipboard = (document.querySelector('.ql-clipboard').contentEditable = false);
+				var bar = (document.querySelector('input[type=text]').type = 'hidden');
+				var p = document.querySelector('#editor');
+				var myInput = document.querySelector('input[name=about]');
+				myInput.value = p.innerHTML;
+			}
+		</script>
+		<script type="text/javascript" src="/app.js"></script>
+	</body>
+</html>

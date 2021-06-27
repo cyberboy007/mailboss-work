@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+<section class="Form my-4 mx-5">
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-lg-5">
+				<img src="images/8.jpg" class="img-fluid" alt="" />
+			</div>
+			<div class="px-5 pt-5 col-lg-7">
+				<h1 class="font-weight-bold py-3">SIGN UP</h1>
+				<p>Find your people. Engage your customers. Build your brand.</p>
+				<form class="" action="/register" method="post">
+					<div class="form-row">
+						<div class="col-lg-7">
+							<input type="text" class="form-control my-3 p-3" placeholder="First Name" name="fName" />
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-lg-7">
+							<input type="text" class="form-control my-3 p-3" placeholder="Last Name" name="lName" />
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-lg-7">
+							<input
+								type="email"
+								class="form-control my-3 p-3"
+								placeholder="Email Address"
+								name="username"
+							/>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-lg-7">
+							<input
+								type="password"
+								class="form-control my-3 p-3"
+								placeholder="Password"
+								name="password"
+							/>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-lg-7">
+							<button type="submit" class="btn1 mt-3 mb-5" name="button">Sign Up</button>
+						</div>
+					</div>
+					<a
+						style="border: 0; padding-bottom: -30px !important; text-decoration: none; color: grey"
+						href="/login"
+						>Already have an account? Login</a
+					>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<%- include('partials/footer') %>

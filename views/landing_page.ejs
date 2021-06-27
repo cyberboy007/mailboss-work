@@ -1,0 +1,32 @@
+<%-include('partials/header_after_login')%> 
+						<!-- repeat this on compose -->
+						<!-- backend -->
+				<% if(emailList) { %>
+					<% emailList.forEach(email => { %>
+						<div>
+							<tr class="trow" >
+								<td class="tdata">
+									<div class="tdiv">
+										<span class="tspan">
+											<a href="#" style="color: black"> <h5><%= email.to %></h5></a>
+										</span>
+									</div>
+								</td>
+								<td class="tdata2">
+									<span class="tospan">
+										<a href="#" style="color: black; " ><h4><%= email.subject %></h4></a>
+										<p style="color:grey; float:right;"><%=email.time%></p>
+									</span>
+								</td>
+							</tr>
+						</div>
+					<% }); %>
+				<% } else { %>
+					<h3>Compose your first mail now!</h3>
+				<% } %>
+				<!-- repeat this on compose -->
+			</tbody>
+		</table>
+	</div>
+</div>
+<%-include('partials/footer_after_login')%>
