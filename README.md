@@ -16,6 +16,11 @@ Download it in your browser and type the following to get started (It will insta
 - npm i
 
 Note that you need not to login to sendinblue or create account on sendinblue just verify yourself with the link you get in your email .
+- You can login with your google account as well .
+- Per user limit of 50 email per day is set 
+- You can directly set the time at which you want to deliver the mail . Also you need to put the email receiptents separated by comma (,) and no space is allowed while composing and 
+ and sending mail .
+ - You need to enter subject while composing mail It is compulsory .
 
 ## WORKING 
 - Create your account
