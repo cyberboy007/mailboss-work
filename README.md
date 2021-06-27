@@ -11,7 +11,9 @@ recurring mails to the recipients.
 ### Login Page
 ![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.07 PM.jpeg)
 
-
+## Quick Start 
+Download it in your browser and type below to get started (It will install all the node modules)
+npm i
 
 ## WORKING 
 - Create your account
