@@ -5,9 +5,13 @@ recurring mails to the recipients.
 
 ## SCREENSHOTS
 ### Home-page (all the scheduled mails reside here)
-![](images.mailboss/Screenshot-1.png)
+![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.09 PM (1).jpeg)
 ### Compose-page (we can create and edit mail features)
-![](images.mailboss/Screenshot-2.png)
+![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.10 PM.jpeg)
+### Login Page
+![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.07 PM.jpeg)
+
+
 
 ## WORKING 
 - Create your account
