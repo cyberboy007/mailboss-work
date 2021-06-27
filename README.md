@@ -15,6 +15,8 @@ recurring mails to the recipients.
 Download it in your browser and type the following to get started (It will install all the node modules)       
 - npm i
 
+Note that you need not to login to sendinblue or create account on sendinblue just verify yourself with the link you get in your email .
+
 ## WORKING 
 - Create your account
 - Activate your account
