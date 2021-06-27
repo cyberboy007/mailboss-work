@@ -57,6 +57,6 @@ Note that you need not to login to sendinblue or create account on sendinblue ju
 
 
 ## TECH-STACK
-  - **CLIENT:**   HTML, CSS, JAVASCRIPT, EJS
-  - **SERVER:**   NODE, EXPRESS, PASSPORTJS
+  - **CLIENT:**   HTML, CSS, JAVASCRIPT, EJS 
+  - **SERVER:**   NODE, EXPRESS, PASSPORTJS ,nodemailer ,tld-extract ,express-session,passport-local-mongoose ,mongoose-findorcreate and some more modules are used 
   - **DATABASES:**   MongoDB-Atlas
