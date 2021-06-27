@@ -12,8 +12,8 @@ recurring mails to the recipients.
 ![alt text](https://github.com/cyberboy007/mailboss-work/blob/main/images.mailboss/WhatsApp%20Image%202021-06-27%20at%209.40.07%20PM.jpeg?raw=true)
 
 ## Quick Start 
-Download it in your browser and type below to get started (It will install all the node modules)
-npm i
+Download it in your browser and type the following to get started (It will install all the node modules)       
+- npm i
 
 ## WORKING 
 - Create your account
