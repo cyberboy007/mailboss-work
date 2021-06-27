@@ -5,7 +5,7 @@ recurring mails to the recipients.
 
 ## SCREENSHOTS
 ### Home-page (all the scheduled mails reside here)
-![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.09 PM (1).jpeg)
+![alt text](https://github.com/cyberboy007/mailboss-work/blob/main/images.mailboss/WhatsApp%20Image%202021-06-27%20at%209.40.09%20PM%20(1).jpeg?raw=true)
 ### Compose-page (we can create and edit mail features)
 ![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.10 PM.jpeg)
 ### Login Page
