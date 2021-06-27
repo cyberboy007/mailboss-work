@@ -7,9 +7,9 @@ recurring mails to the recipients.
 ### Home-page (all the scheduled mails reside here)
 ![alt text](https://github.com/cyberboy007/mailboss-work/blob/main/images.mailboss/WhatsApp%20Image%202021-06-27%20at%209.40.09%20PM%20(1).jpeg?raw=true)
 ### Compose-page (we can create and edit mail features)
-![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.10 PM.jpeg)
+![alt text](https://github.com/cyberboy007/mailboss-work/blob/main/images.mailboss/WhatsApp%20Image%202021-06-27%20at%209.40.10%20PM.jpeg?raw=true)
 ### Login Page
-![](images.mailboss/WhatsApp Image 2021-06-27 at 9.40.07 PM.jpeg)
+![alt text](https://github.com/cyberboy007/mailboss-work/blob/main/images.mailboss/WhatsApp%20Image%202021-06-27%20at%209.40.07%20PM.jpeg?raw=true)
 
 ## Quick Start 
 Download it in your browser and type below to get started (It will install all the node modules)
