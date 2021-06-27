@@ -237,7 +237,7 @@ app.get('/landing-page', (req, res) => {
 				res.render('landing_page', {emailList: userEmails.emails})
 			}
 			else {
-				res.render('landing_page');
+				res.render('landing_page',{emailList: [{to: 'name@example.com', subject: 'your subject here', time:'YYYY-MM-DD HH:MM'}]});
 			}
 		});
 	} else {
