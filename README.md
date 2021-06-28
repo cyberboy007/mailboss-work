@@ -2,6 +2,8 @@
 
 A fullstack web application where users can login and send 
 recurring mails to the recipients.
+## Hosted Live here
+https://arcane-headland-95477.herokuapp.com/
 
 ## SCREENSHOTS
 ### Home-page (all the scheduled mails reside here)
